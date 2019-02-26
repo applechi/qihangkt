@@ -29,6 +29,7 @@ public class AdminController {
 	@AuthMethod  //这个注解就是标记，admin这个方法是需要权限才能访问的
 	@RequestMapping(value="/admin/admin.html",method=RequestMethod.GET)
 	public String admin() {
+		String string = new String();
 		return "admin/admin";
 	}
 	
